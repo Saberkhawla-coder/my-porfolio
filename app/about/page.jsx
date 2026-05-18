@@ -1,5 +1,4 @@
 'use client';
-import Link from "next/link";
 import Image from "next/image";
 import { FaReact,FaLaravel,FaJs } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
@@ -16,12 +15,12 @@ export default function About() {
   )
   return (
     <> 
-    <section style={{filter}} className="relative min-h-[90vh]  flex items-center justify-center">
+    <section style={{filter}} className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-10">
        
-      <div   className="container mx-auto py-4 px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+      <div   className="container mx-auto py-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
         
      
-       <div className="relative flex justify-center items-center">
+       <div className="relative flex justify-center items-center order-2 md:order-1">
 
        <div className="absolute w-99 h-99 bg-green-500 rounded-full blur-3xl opacity-40"></div>
 
@@ -96,46 +95,52 @@ export default function About() {
                 ease:'linear'
             }}
             >
-                <FaLaravel className=" text-3xl"  />
+                <FaLaravel className=" text-3xl text-red-500"  />
             </motion.div>
    
 
 
 </div>
         {/* About text */}
-        <div className="space-y-6">
+        <div className="space-y-6 text-center md:text-left rder-1 md:order-2">
 
-          {/* Title */}
-          <div className="flex items-center gap-3">
-            <div className="h-10 w-[3px] bg-green-400"></div>
-            <h1 className="text-3xl font-semibold">About</h1>
+          {/* title */}
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            <div className="h-8 w-[3px] bg-green-400"></div>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
+              About
+            </h1>
           </div>
 
-       
-            <p className="font-mono text-gray-300 text-sm leading-relaxed max-w-lg text-justify">
-           I am a passionate Full-Stack Web Developer based in Casablanca. I specialize in building
-            modern and scalable web applications using React.js and Laravel. I enjoy creating clean
-            user interfaces and secure backend systems. During my training at Simplon Maghreb, I
-            worked on real-world projects including e-commerce and medical management platforms.
-            I am always eager to learn new technologies and improve my development skills.
-            </p>
-            <div className="flex max-w-lg justify-between">
-                <div className="flex  items-center gap-2 text-gray-300 font-mono">
-                    <BiLogoGmail className="text-green-400"/>khawla.saber06@gmail.com
-                </div>
-                <div className="flex  items-center gap-2 text-gray-300 font-mono ">
-                    <FaPhone className="text-green-400"/> 0770511710
-                </div>
-              
-                
+          {/* paragraph */}
+          <p className="font-mono text-gray-300 text-sm sm:text-base leading-relaxed text-justify">
+            I am a passionate Full-Stack Web Developer based in Casablanca. I specialize in building modern and scalable web applications using React.js and Laravel. I enjoy creating clean user interfaces and secure backend systems.
+          </p>
+
+          {/* contact */}
+          <div className="flex flex-col sm:flex-row gap-4 sm:justify-between text-gray-300 font-mono text-sm">
+
+            <div className="flex items-center gap-2 justify-center sm:justify-start">
+              <BiLogoGmail className="text-green-400" />
+              <span className="break-all">khawla.saber06@gmail.com</span>
             </div>
+
+            <div className="flex items-center gap-2 justify-center sm:justify-start">
+              <FaPhone className="text-green-400" />
+              0770511710
+            </div>
+          </div>
+
+          {/* button */}
+          <div className="flex justify-center md:justify-start">
             <a
-                href="/KHAWLA_SABER_CV.pdf"
-                download
-                className="hover:text-white bg-green-400/35 p-2 rounded transition"
-                >
-                Download CV
+              href="/KHAWLA_SABER_CV.pdf"
+              download
+              className="hover:text-white bg-green-400/35 px-4 py-2 rounded transition"
+            >
+              Download CV
             </a>
+          </div>
 
         </div>
 
