@@ -47,13 +47,12 @@ export default function ContactPage() {
   }
 };
   return (
-    <section className="min-h-screen bg-black text-white px-2 py-10 bg-zinc-900/70 rounded-4xl m-20 mt-0">
-      
+    <section className="min-h-screen bg-black text-white px-4 sm:px-6 lg:px-10 py-10 bg-zinc-900/70 rounded-3xl sm:rounded-4xl mx-3 sm:mx-6 lg:mx-20">      
      
       <div className="flex justify-center items-center mb-10">
        
 
-        <h2 className="text-3xl md:text-4xl font-semibold">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
           Contact
         </h2>
       </div>
@@ -63,7 +62,7 @@ export default function ContactPage() {
         
        
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-4xl font-bold leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
             Let’s work together.
           </h1>
 
@@ -100,7 +99,7 @@ export default function ContactPage() {
         </div>
 
         {/* RIGHT */}
-        <form onSubmit={handleSubmit} className="space-y-6 bg-zinc-900/60 p-8 md:p-10 rounded-3xl backdrop-blur-md border border-zinc-800 shadow-2xl">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-zinc-900/60 p-5 sm:p-8 md:p-10 rounded-3xl backdrop-blur-md border border-zinc-800 shadow-2xl">
           
           <div className="space-y-2">
             <label className="text-sm text-zinc-400">
@@ -113,7 +112,7 @@ export default function ContactPage() {
                 value={formData.name}
                 onChange={handleChange}
               placeholder="Your name"
-              className="w-full bg-black border border-zinc-700 rounded-xl px-4 py-3 outline-none focus:border-green-400 transition"
+              className="w-full bg-black border border-zinc-700 rounded-xl px-3 sm:px-4 py-2 sm:py-3 outline-none focus:border-green-400 transition"
             />
           </div>
 
@@ -128,7 +127,7 @@ export default function ContactPage() {
                 value={formData.email}
                 onChange={handleChange}
               placeholder="your@email.com"
-              className="w-full bg-black border border-zinc-700 rounded-xl px-4 py-3 outline-none focus:border-green-400 transition"
+              className="w-full bg-black border border-zinc-700 rounded-xl px-3 sm:px-4 py-2 sm:py-3 outline-none focus:border-green-400 transition"
             />
           </div>
 
@@ -163,7 +162,7 @@ export default function ContactPage() {
      
 
       <p className="text-zinc-500 text-sm mt-2 ">
-        © 2025 Khawla Saber. All rights reserved.
+        © 2026 Khawla Saber. All rights reserved.
       </p>
     </div>
 
