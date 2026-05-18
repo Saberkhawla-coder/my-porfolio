@@ -30,7 +30,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center relative z-10 w-full">
 
           
-          <div className="order-2 m-auto md:order-1 text-center md:text-left">
+          <div className=" m-auto  text-center md:text-left">
 
             <p className="font-mono text-sm sm:text-base lg:text-lg text-gray-400 mb-4">
               Hey 🖐, I&apos;m a Full Stack Developer
@@ -67,14 +67,14 @@ export default function Home() {
           </div>
 
          
-          <div className="relative flex justify-center order-1 md:order-2">
+          <div className="relative flex justify-center">
 
           
-            <div className="absolute w-82 h-82 sm:w-72 sm:h-72 bg-green-500 rounded-full blur-3xl opacity-40"></div>
+            <div className="absolute w-56 h-auto sm:w-72 sm:h-72 bg-green-500 rounded-full blur-3xl opacity-40"></div>
 
            
             <Image
-              src="/images/test1.png"
+              src="/images/test2.png"
               alt="Khawla Saber"
               width={320}
               height={320}
