@@ -70,7 +70,7 @@ export default function Home() {
           <div className="relative flex justify-center">
 
           
-            <div className="absolute w-56 h-auto sm:w-72 sm:h-72 bg-green-500 rounded-full blur-3xl opacity-40"></div>
+            <div className="absolute w-60 h-60 sm:w-72 sm:h-72 bg-green-500 rounded-full blur-3xl opacity-40"></div>
 
            
             <Image
