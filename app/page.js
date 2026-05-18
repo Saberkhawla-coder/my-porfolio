@@ -20,9 +20,6 @@ export default function Home() {
 
   return (
     <div className="overflow-x-hidden">
-      <ParticlesBackground />
-
-      {/* HERO SECTION */}
       <motion.section
         style={{ filter }}
         className="relative min-h-screen m-auto flex items-center overflow-hidden px-4 sm:px-6 lg:px-10 py-10"
