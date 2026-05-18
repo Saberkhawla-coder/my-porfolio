@@ -47,9 +47,9 @@ export default function ContactPage() {
   }
 };
   return (
-    <section className="min-h-screen bg-black text-white px-4 sm:px-6 lg:px-10 py-10 bg-zinc-900/70 rounded-3xl sm:rounded-4xl mx-3 sm:mx-6 lg:mx-20">      
+    <section className=" min-h-screen bg-black text-white px-4 sm:px-6 lg:px-10 py-10 bg-zinc-900/70 rounded-3xl sm:rounded-4xl mx-3 sm:mx-6 lg:mx-20">      
      
-      <div className="flex justify-center items-center mb-10">
+      <div className=" flex justify-center items-center mb-10 ">
        
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
@@ -62,11 +62,11 @@ export default function ContactPage() {
         
        
         <div className="space-y-6">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+          <h1 className="text-2xl text-center md:text-left  sm:text-3xl md:text-4xl font-bold leading-tight">
             Let’s work together.
           </h1>
 
-         <p className="text-zinc-400  leading-relaxed text-lg">
+         <p className="text-zinc-400 text-center md:text-left leading-relaxed text-lg">
             I’m available for freelance projects, internships,
             and full-stack web development opportunities.
             I enjoy building modern, responsive, and user-friendly
@@ -75,21 +75,21 @@ export default function ContactPage() {
         </p>
 
           <div className="space-y-4 text-zinc-300">
-            <p className="flex items-center gap-2">
+            <p className="flex justify-center md:justify-start  items-center gap-2">
               <span className="text-green-400">
                 <FaPhoneAlt/>
               </span>
               0770511710
             </p>
 
-            <p className="flex  items-center gap-2">
+            <p className="flex justify-center md:justify-start items-center gap-2">
               <span className="text-green-400">
                 <IoMdMail/>
               </span>
               khawla.saber06@gmail.com
             </p>
 
-            <p className="flex items-center gap-2">
+            <p className="flex justify-center md:justify-start items-center gap-2">
               <span className="text-green-400">
                 <FaLocationDot />
               </span>
@@ -98,7 +98,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* RIGHT */}
+
         <form onSubmit={handleSubmit} className="space-y-6 bg-zinc-900/60 p-5 sm:p-8 md:p-10 rounded-3xl backdrop-blur-md border border-zinc-800 shadow-2xl">
           
           <div className="space-y-2">
