@@ -9,11 +9,11 @@ export default function Skills() {
   return (
    <section className="relative min-h-[90vh] flex items-center justify-center  overflow-hidden">
     <ParticlesBackground/>
-        <div className="container relative z-10 flex flex-col m-auto space-y-12">
+        <div className="container relative z-10 flex flex-col mx-5 space-y-12">
   
         <div className="flex justify-center items-center gap-3">
           <div className="h-10 w-[3px] bg-green-400"></div>
-          <h2 className="text-3xl font-semibold">Skills</h2>
+          <h2 className="text-3xl text-white font-semibold">Skills</h2>
         </div>
 
         <p className="font-mono text-gray-300 text-sm leading-relaxed text-center max-w-2xl m-auto">
